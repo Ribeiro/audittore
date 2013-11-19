@@ -29,9 +29,14 @@
 
 	<aop:aspectj-autoproxy/>
 	
+	<!-- <context:component-scan base-package="br.com.gigio.audittore">
+		<context:include-filter type="aspectj"
+			expression="br.com.gigio.audittore.audit.aspectj.managers.AuditManager, br.com.gigio.audittore.audit.aspectj.interceptors.AuditInterceptor" />
+	</context:component-scan> -->
+	
 	<context:component-scan base-package="br.com.gigio.audittore">
 		<context:include-filter type="aspectj"
-			expression="br.com.gigio.audittore.audit.managers.AuditManager, br.com.gigio.audittore.audit.interceptors.AuditInterceptor" />
+			expression="br.com.gigio.audittore.audit.aspectj.managers.AuditManager, br.com.gigio.audittore.audit.aspectj.interceptors.AuditInterceptor" />
 	</context:component-scan>
 	
 </beans:beans>

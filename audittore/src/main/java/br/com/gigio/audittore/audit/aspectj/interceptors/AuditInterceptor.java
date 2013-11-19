@@ -1,4 +1,4 @@
-package br.com.gigio.audittore.audit.interceptors;
+package br.com.gigio.audittore.audit.aspectj.interceptors;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,7 +9,7 @@ import br.com.gigio.audittore.audit.aspectj.interfaces.Audittable;
 @Service
 @Aspect
 public class AuditInterceptor {
-    @Before(value = "br.com.gigio.audittore.audit.managers.AuditManager.auditLog()"
+    @Before(value = "br.com.gigio.audittore.audit.aspectj.managers.AuditManager.auditLog()"
             		+ "&& target(bean) "
             		+ "&& @annotation(br.com.gigio.audittore.audit.aspectj.interfaces.Audittable)"
             		+ "&& @annotation(logme)", argNames = "bean,logme")
