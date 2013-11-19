@@ -1,6 +1,3 @@
-/**
- * Copyright 2013 Marin Solutions
- */
 package br.com.gigio.audittore.controller;
 
 import org.springframework.stereotype.Controller;
@@ -20,7 +17,7 @@ import br.com.gigio.audittore.audit.aspectj.interfaces.Audittable;
 @Controller()
 public class HelpController {
 
-	//@Audittable
+	@Audittable
 	@RequestMapping(value = "/help", method = RequestMethod.GET)
 	public String showHelp(@RequestParam int pageId, Model model) {
 
