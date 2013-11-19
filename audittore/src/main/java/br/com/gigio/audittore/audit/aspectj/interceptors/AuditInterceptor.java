@@ -1,25 +1,26 @@
 package br.com.gigio.audittore.audit.aspectj.interceptors;
 
-import java.util.Enumeration;
-import java.util.HashMap;
 import java.util.Map;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import br.com.gigio.audittore.audit.aspectj.domain.RequestHeaders;
 import br.com.gigio.audittore.audit.aspectj.interfaces.Audittable;
 
 @Service
 @Aspect
 public class AuditInterceptor {
+	private HttpServletRequest request;
 	
+	@Autowired
+	public void setRequest(HttpServletRequest request) {
+		this.request = request;
+	}
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
     @Before(value = "br.com.gigio.audittore.audit.aspectj.managers.AuditManager.auditLog()"
@@ -27,7 +28,6 @@ public class AuditInterceptor {
             		+ "&& @annotation(br.com.gigio.audittore.audit.aspectj.interfaces.Audittable)"
             		+ "&& @annotation(logme)", argNames = "bean,logme")
     public void log(JoinPoint jp, Object bean, Audittable logme) {
-    	HttpServletRequest request = (HttpServletRequest)jp.getArgs()[0];
     	logger.info("Request IP Address: " + request.getRemoteAddr());
     	logger.info("Request Headers: " + getParameterNamesFrom(request));
     	logger.info("Request SessionID: " + request.getRequestedSessionId());
