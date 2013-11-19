@@ -28,6 +28,7 @@ public class AuditInterceptor {
             		+ "&& @annotation(logme)", argNames = "bean,logme")
     public void log(JoinPoint jp, Object bean, Audittable logme) {
     	HttpServletRequest request = (HttpServletRequest)jp.getArgs()[0];
+    	logger.info("Request IP Address: " + request.getRemoteAddr());
     	logger.info("Request Headers: " + getParameterNamesFrom(request));
     	logger.info("Request SessionID: " + request.getRequestedSessionId());
     	logger.info("Request URL: " + request.getRequestURL());
