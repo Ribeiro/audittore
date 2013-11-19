@@ -1,5 +1,7 @@
 package br.com.gigio.audittore.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +21,7 @@ public class HelpController {
 
 	@Audittable
 	@RequestMapping(value = "/help", method = RequestMethod.GET)
-	public String showHelp(@RequestParam int pageId, Model model) {
+	public String showHelp(HttpServletRequest request, @RequestParam int pageId, Model model) {
 
 		String help = getHelpPage(pageId);
 
