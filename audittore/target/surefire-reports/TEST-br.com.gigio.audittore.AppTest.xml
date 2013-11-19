@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.061" errors="0" skipped="0" tests="1" name="br.com.gigio.audittore.AppTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\JPMorgan\Java\jdk1.6.0_39\jre\bin"/>
+    <property name="java.vm.version" value="20.14-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\JPMorgan\workspace\audittore"/>
+    <property name="java.runtime.version" value="1.6.0_39-b04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\gribeiro\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\JPMorgan\workspace\.metadata\.plugins\org.eclipse.m2e.core\launches\m2conf6412425568866694339.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\JPMorgan\Java\jdk1.6.0_39\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/JPMorgan/Java/jdk1.6.0_39/bin/../jre/bin/server;C:/JPMorgan/Java/jdk1.6.0_39/bin/../jre/bin;C:/JPMorgan/Java/jdk1.6.0_39/bin/../jre/lib/amd64;C:\JPMorgan\Java\jdk1.6.0_39\bin;C:\JPMorgan\springsource\spring-roo-1.2.4.RELEASE\bin;C:\JPMorgan\Java\jdk1.6.0_39\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\WinMerge;C:\Program Files (x86)\nodejs\;C:\DEV\vert.x-1.3.1.final\bin;%MAVEN_HOME%\bin;C:\Program Files (x86)\Calibre2\;C:\Users\gribeiro\AppData\Roaming\npm;C:\JPMorgan\springsource\sts-3.1.0.RELEASE;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\gribeiro"/>
+    <property name="user.timezone" value="GMT-03:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="gribeiro"/>
+    <property name="java.class.path" value="/C:/JPMorgan/springsource/sts-3.1.0.RELEASE/configuration/org.eclipse.osgi/bundles/720/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\JPMorgan\Java\jdk1.6.0_39\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s C:\JPMorgan\springsource\apache-maven-3.0.4\conf\settings.xml install"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_39"/>
+    <property name="java.ext.dirs" value="C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\resources.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\rt.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\sunrsasign.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\jsse.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\jce.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\charsets.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\lib\modules\jdk.boot.jar;C:\JPMorgan\Java\jdk1.6.0_39\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="C:\JPMorgan\workspace\audittore\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.001" classname="br.com.gigio.audittore.AppTest" name="testApp"/>
+</testsuite>
